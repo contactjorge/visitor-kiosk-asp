@@ -1,4 +1,6 @@
-﻿/* Move down content because we have a fixed navbar that is 50px tall */
+﻿/** Layout Styles **/
+
+/* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -30,7 +32,6 @@ footer {
     width: 100%;
 }
 
-/** Layout Styles **/
 section, article {
     padding: 1rem 0;
 }
@@ -39,24 +40,6 @@ footer .col-footer {
     border-color: #d1d1d1;
 }
 /** Component Styles **/
-.minimotema-field img {
-    max-height: 480px;
-    margin: 0;
-}
-
-.card-cascade1 .card-narrow-heading .card-title {
-    margin: 1.25rem 4% 1.25rem 4%;
-    background: linear-gradient(40deg, #cfc5bc, #036);
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
-    border-radius: .1rem;
-}
-
-.card-cascade2 .card-narrow-heading .card-title {
-    margin: 1.25rem 4% 1.25rem 4%;
-    background: linear-gradient(40deg, #a7b8b5, #036);
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
-    border-radius: .1rem;
-}
 
 .card-narrow-heading.card {
     margin: 1.25rem 0;
@@ -64,21 +47,21 @@ footer .col-footer {
     border-radius: .1rem;
 }
 
-#block-minimotema-ctabottompanel1 .card-narrow-heading .card-title {
+#bottompanel1 .card-narrow-heading .card-title {
     margin: 1.25rem 4% 1.25rem 4%;
     background: #007f9f;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
     border-radius: .1rem;
 }
 
-#block-minimotema-ctabottompanel2 .card-narrow-heading .card-title {
+#bottompanel2 .card-narrow-heading .card-title {
     margin: 1.25rem 4% 1.25rem 4%;
     background: linear-gradient(40deg, #007f9f, #036);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
     border-radius: .1rem;
 }
 
-#block-minimotema-ctabottompanel3 .card-narrow-heading .card-title {
+#bottompanel3 .card-narrow-heading .card-title {
     margin: 1.25rem 4% 1.25rem 4%;
     background: #036;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
@@ -195,17 +178,6 @@ minimo-black {
     color: #010101;
 }
 
-minimo-bg-panel-color, minimo-bg-card-color, minimo-bg-stamp-color {
-    color: #036;
-    background: #f8f8f8;
-    border-bottom-style: inset;
-}
-
-
-span.custom-toggler.navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=082D3A');
-}
-
 /* Responsive: Portrait tablets and up */
 
 @media only screen and (max-width: 576px) {
@@ -220,7 +192,6 @@ span.custom-toggler.navbar-toggler-icon {
         text-align: center;
         line-height: 0.5rem;
     }
-
    
     .jumbotron {
         margin-top: 20px;
