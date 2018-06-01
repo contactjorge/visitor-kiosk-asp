@@ -8,6 +8,7 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
+using System.Web.UI;
 
 namespace visitor_kiosk_asp
 {
@@ -20,6 +21,13 @@ namespace visitor_kiosk_asp
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-        }
+			ScriptManager.ScriptResourceMapping.AddDefinition("jquery", new ScriptResourceDefinition
+			{
+				Path = "~/scripts/jquery-3.3.1.min.js",
+				DebugPath = "~/scripts/jquery-3.3.1.min.js",
+				CdnPath = "http://ajax.microsoft.com/ajax/jQuery/jquery-3.3.1.min.js",
+				CdnDebugPath = "http://ajax.microsoft.com/ajax/jQuery/jquery-3.3.1.js"
+			});
+		}
     }
 }

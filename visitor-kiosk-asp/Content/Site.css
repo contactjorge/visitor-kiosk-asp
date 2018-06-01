@@ -19,8 +19,209 @@ textarea {
 }
 
 
+footer {
+    text-decoration: #fff;
+    text-shadow: #f8f8f8;
+    color: #e0e1e2;
+    background-color: #727472;
+    padding: 1rem 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/** Layout Styles **/
+section, article {
+    padding: 1rem 0;
+}
+
+footer .col-footer {
+    border-color: #d1d1d1;
+}
+/** Component Styles **/
+.minimotema-field img {
+    max-height: 480px;
+    margin: 0;
+}
+
+.card-cascade1 .card-narrow-heading .card-title {
+    margin: 1.25rem 4% 1.25rem 4%;
+    background: linear-gradient(40deg, #cfc5bc, #036);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    border-radius: .1rem;
+}
+
+.card-cascade2 .card-narrow-heading .card-title {
+    margin: 1.25rem 4% 1.25rem 4%;
+    background: linear-gradient(40deg, #a7b8b5, #036);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    border-radius: .1rem;
+}
+
+.card-narrow-heading.card {
+    margin: 1.25rem 0;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    border-radius: .1rem;
+}
+
+#block-minimotema-ctabottompanel1 .card-narrow-heading .card-title {
+    margin: 1.25rem 4% 1.25rem 4%;
+    background: #007f9f;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    border-radius: .1rem;
+}
+
+#block-minimotema-ctabottompanel2 .card-narrow-heading .card-title {
+    margin: 1.25rem 4% 1.25rem 4%;
+    background: linear-gradient(40deg, #007f9f, #036);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    border-radius: .1rem;
+}
+
+#block-minimotema-ctabottompanel3 .card-narrow-heading .card-title {
+    margin: 1.25rem 4% 1.25rem 4%;
+    background: #036;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    border-radius: .1rem;
+}
+
+h3.card-title {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: #f8f8f8;
+}
+
+.panel-minimo-bland {
+    background-color: #727472;
+    border-color: #727472;
+    text-decoration: #fff;
+    text-shadow: #f8f8f8;
+    color: #e0e1e2;
+}
+
+.panel-minimo-bland > .panel-heading {
+    text-decoration: #fff;
+    text-shadow: #f8f8f8;
+    color: #e0e1e2;
+    background-color: #727472;
+    border-color: #727472;
+}
+
+.panel-minimo-bland > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #727472;
+}
+
+.main-footer, .panel-minimo-bland > .panel-heading .badge {
+    text-decoration: #fff;
+    text-shadow: #f8f8f8;
+    color: #e0e1e2;
+    background-color: #727472;
+}
+
+.panel-minimo-bland > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #727472;
+    background-color: #727472;
+}
+
+.panel-minimo-bland ul li {
+    background-color: transparent;
+    border: none;
+}
+
+
+/** State Styles **/
+
+
+/** Theme Styles **/
+
+minimo-white {
+    color: #E0E0E0;
+}
+
+minim-offwhite {
+    color: #d1d1d1
+}
+
+minimo-gray {
+    color: #a7b8b5
+}
+
+minimo-beige {
+    color: #cfc5bc;
+}
+
+minimo-brown {
+    color: #aea085;
+}
+
+minimo-darkbrown {
+    color: #847767;
+}
+
+minimo-orange {
+    color: #c88770;
+}
+
+minimo-yellow {
+    color: #009f00;
+}
+
+minimo-green {
+    color: #006332;
+}
+
+minimo-bluegreen {
+    color: #006332;
+}
+
+minimo-blue {
+    color: #007f9f;
+}
+
+minimo-blueindigo {
+    color: #036;
+}
+
+minimo-indigo {
+    color: #134a74;
+}
+
+minimo-violet {
+    color: #131925;
+}
+
+minimo-black {
+    color: #010101;
+}
+
+minimo-bg-panel-color, minimo-bg-card-color, minimo-bg-stamp-color {
+    color: #036;
+    background: #f8f8f8;
+    border-bottom-style: inset;
+}
+
+
+span.custom-toggler.navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=082D3A');
+}
+
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+
+@media only screen and (max-width: 576px) {
+}
+
+@media only screen and (max-width: 768px) {
+    .col-footer, .cta-featured {
+        display: block;
+    }
+
+    footer {
+        text-align: center;
+        line-height: 0.5rem;
+    }
+
+   
     .jumbotron {
         margin-top: 20px;
     }
@@ -28,4 +229,15 @@ textarea {
     .body-content {
         padding: 0;
     }
+}
+
+@media only screen and (max-width: 992px) {
+    footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
 }
