@@ -11,7 +11,7 @@ namespace visitor_kiosk_asp
 {
 
 
-	public partial class WebForm1
+	public partial class CheckIn
 	{
 	}
 }
