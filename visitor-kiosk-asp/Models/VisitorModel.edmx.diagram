@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2b16288e386e46329454bfd29058b909" Name="Diagram1" >
+        <EntityTypeShape EntityType="VisitorModel.Guest" Width="1.75" PointX="3.625" PointY="2.875" />
+        <EntityTypeShape EntityType="VisitorModel.Visit" Width="1.5" PointX="0.5" PointY="7.5" />
+        <EntityTypeShape EntityType="VisitorModel.Registration" Width="1.5" PointX="6.125" PointY="6" />
+        <EntityTypeShape EntityType="VisitorModel.Room" Width="1.5" PointX="0.5" PointY="2.875" />
+        <EntityTypeShape EntityType="VisitorModel.Visitor" Width="1.5" PointX="3.625" PointY="7.5" />
+        <AssociationConnector Association="VisitorModel.RoomGuest" />
+        <AssociationConnector Association="VisitorModel.VisitorRegistration" />
+        <AssociationConnector Association="VisitorModel.GuestRegistration" ManuallyRouted="true" >
+          <ConnectorPoint PointX="5.375" PointY="4.1128169582201082" />
+          <ConnectorPoint PointX="6.875" PointY="4.1128169582201082" />
+          <ConnectorPoint PointX="6.875" PointY="6" />
+        </AssociationConnector>
+        <AssociationConnector Association="VisitorModel.VisitorVisit" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
