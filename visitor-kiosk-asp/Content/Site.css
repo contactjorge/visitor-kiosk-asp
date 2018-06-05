@@ -1,17 +1,36 @@
 ﻿/** Layout Styles **/
+h1{font-size: 28px;}
+h2 {
+    font-size: 26px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 22px;
+}
+h5 {
+    font-size: 20px;
+}
+h6 {
+    font-size: 18px;
+}
+p {
+    font-size: 18px;
+}
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: 18px;
 }
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
@@ -33,30 +52,45 @@ footer {
 }
 
 section, article {
-    padding: 1rem 0;
+    padding: 8px 0;
 }
 
-footer .col-footer {
-    border-color: #d1d1d1;
-}
 /** Component Styles **/
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
     color: #dcdcdc !important;
 }
 
-a.panel{
-    text-decoration: none !important;
-}
-.panel-narrow-heading .panel-heading h3 {
-    text-decoration: none !important;
-}
-.panel-narrow-heading .panel-body p {
-    text-decoration: none !important;
-}
-.panel-narrow-heading .panel-fpoter p {
-    text-decoration: none !important;
+.jumbotron {
+    padding: 36px 48px;
+    text-align: center;
 }
 
+.jumbotron h1 {
+    font-size: 36px;
+}
+
+.jumbotron h2{
+    font-size: 26px;
+}
+
+.jumbotron h3{
+    font-size: 24px;
+}
+
+.jumbotron h4 {
+    font-size: 20px;
+}
+
+.jumbotron p {
+    font-size: 18px;
+}
+
+#reports a{
+    text-decoration: none !important;
+}
+.panel-narrow-heading a {
+    text-decoration: none !important;
+}
 .panel-narrow-heading.panel {
     margin: 1.25rem 0;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .25), 0 4px 15px 0 rgba(10, 10, 10, .15);
@@ -71,16 +105,17 @@ a.panel{
     text-decoration: none;
 }
 
-.panel-heading {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.panel-heading, a.panel-heading{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
     text-align: center;
     color: #d1d1d1;
 }
 
-.panel-body {
+.panel-body, a.panel-body {
     text-align: center;
     text-decoration: none;
+    color: #3a4a52;
 }
 
 .panel-body a{
@@ -147,7 +182,7 @@ a.btn-bland{font-size: 18px;}
     border-color: #122b40;
 }
 
-.btn-bland:hover {
+.btn-bland:hover, .panel-heading:hover {
     text-decoration: #fff;
     color: #fff;
     background: linear-gradient(40deg, #036, #007f9f);
@@ -238,10 +273,12 @@ minimo-black {
         text-align: center;
         line-height: 0.5rem;
     }
-   
-    .jumbotron {
-        margin-top: 20px;
-    }
+
+.jumbotron {
+    padding: 36px 48px;
+    text-align: center;
+    margin-top: 12px;
+}
 
     .body-content {
         padding: 0;

@@ -3,29 +3,33 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>Good Health Hospital</h1>
-        <h2 class="lead">Welcome to the Good Health Hospital visitor kiosk.</h2>
-		<p>If you are pre registered, click the check-in button. Otherwise, cick the Pre-register button to check in.<br/>
-        <a href="/about" class="btn btn-primary btn-lg">Need Help? &raquo;</a></p>
+        <h1>Welcome to the Good Health Hospital visitor kiosk.</h1>
+        <p class="lead">Click the <b>Check-in</b> button if you are a pre registered visitor.</p>
+		<p>Otherwise, cick the <b>Pre-register</b> button to check in.</p>
+        <p><a href="/about" class="btn btn-primary btn-lg">Need Help? &raquo;</a></p>
     </div>
 
     <main class="row">
         <section class="col-md-6 col-lg-6" id="checkin-well">
 			<div class="panel panel-narrow-heading panel-bland" id="checkin">
-				<div class="panel-heading"><h3 class="btn-transparent"><a href="/CheckIn">Visitor Check-In</a></h3></div>
-				<div class="panel-body"><a href="/CheckIn">Press here if you are checking in as a visitor.</a></div>
-				<div class="btn-group btn-group-justified">
-					<a class="btn btn-bland" href="/CheckIn">Check-In &raquo;</a>
-				</div>
+				<a href="/CheckIn">
+					<div class="panel-heading"><h3 class="btn-transparent">Visitor Check-In</h3></div>
+					<div class="panel-body">Press here if you are checking in as a visitor.</div>
+					<div class="btn-group btn-group-justified">
+						<p class="btn btn-bland">Check-In &raquo;</p>
+					</div>
+				</a>
 			</div>
         </section>
 		<section class="col-md-6 col-lg-6" id="register-well">
-			<div class="panel panel-bland panel-narrow-heading" id="register">
-				<div class="panel-heading"><h3 class="btn-transparent"><a href="/PreRegister">Visitor Pre-registration</a></h3></div>
-				<div class="panel-body"><a href="/PreRegister">Press here to pre-register a visitor.</a></div>
-				<div class="btn-group btn-group-justified">
-					<a class="btn btn-bland" href="/PreRegister">Register &raquo;</a>
-				</div>
+			<div class="panel panel-narrow-heading panel-bland" id="register">
+				<a href="/PreRegister">
+					<div class="panel-heading"><h3 class="btn-transparent">Visitor Pre-registration</h3></div>
+					<div class="panel-body">Press here to pre-register a visitor.</div>
+					<div class="btn-group btn-group-justified">
+						<p class="btn btn-bland">Register &raquo;</p>
+					</div>
+				</a>
 			</div>
         </section>
     </main>
