@@ -4,9 +4,13 @@
 		<section class="col-md-1 col-lg-1"></section>
 		<section class="col-md-10 col-lg-10">
 			<div class="panel panel-bland">
-				<h2>Checkin</h2>
-				<p>Visual Studio projects.</p>
-				<p><a class="btn btn-default" href="#">More &raquo;</a></p>
+				<div class="panel-heading">
+					<h2>Checkin</h2>
+				</div>
+				<div class="panel-body">
+					<p>Visual Studio projects.</p>
+					<p><a class="btn btn-default" href="#">More &raquo;</a></p>
+				</div>
 			</div>
 		</section>
 		<section class="col-md-1 col-lg-1"></section>
