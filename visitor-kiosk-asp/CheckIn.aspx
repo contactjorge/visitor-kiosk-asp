@@ -8,7 +8,7 @@
 				<div class="panel-body">
 					<div class="row">
 						<div class="col-md-12">
-							<h3>Enter Guest Information</h3>
+							<h3>Enter Vistor Information</h3>
 						</div>
 					</div>
 					<div class="row">

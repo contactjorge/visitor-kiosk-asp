@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "visitor-kiosk-asp", "visitor-kiosk-asp\visitor-kiosk-asp.csproj", "{FB06E3E9-C237-456E-8D7B-3EEF48F7863C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "visitor-kiosk-asp.Tests", "visitor-kiosk-asp.Tests\visitor-kiosk-asp.Tests.csproj", "{C27C2D53-4C2A-4AF4-85A7-BA7F409D118F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{FB06E3E9-C237-456E-8D7B-3EEF48F7863C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB06E3E9-C237-456E-8D7B-3EEF48F7863C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB06E3E9-C237-456E-8D7B-3EEF48F7863C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C27C2D53-4C2A-4AF4-85A7-BA7F409D118F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C27C2D53-4C2A-4AF4-85A7-BA7F409D118F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C27C2D53-4C2A-4AF4-85A7-BA7F409D118F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C27C2D53-4C2A-4AF4-85A7-BA7F409D118F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
