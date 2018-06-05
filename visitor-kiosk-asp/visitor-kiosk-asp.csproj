@@ -58,6 +58,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -200,6 +202,13 @@
     <Content Include="ReportPreRegistration.aspx" />
     <Content Include="ReportRegistered.aspx" />
     <Content Include="Reports.aspx" />
+    <EntityDeploy Include="Models\VisitorModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VisitorModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\VisitorModel.edmx.diagram">
+      <DependentUpon>VisitorModel.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -271,6 +280,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\VisitorModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VisitorModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="PreRegister.aspx.cs">
       <DependentUpon>PreRegister.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -325,7 +339,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
