@@ -105,6 +105,14 @@ section, article {
     text-decoration: none;
 }
 
+.panel-views .panel-heading {
+    margin: 1.25rem 4% 1.25rem 4%;
+    background: linear-gradient(30deg, #007f9f, #aea085);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .25), 0 4px 15px 0 rgba(10, 10, 10, .10);
+    border-radius: .15rem;
+    text-decoration: none;
+}
+
 .panel-heading, a.panel-heading{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -123,17 +131,32 @@ section, article {
     text-decoration: none;
 }
 
-.panel-bland {
+.panel-views .panel-body{
+    padding: 24px 48px;
+    text-align: left;
+}
+
+.panel-views .panel-body .row {
+    margin: 12px 0;
+}
+.panel-bland, .panel-views {
     background-color: #f5f5f5;
-    border-color: #d1d1d1;
+    border-color: #f2f2f2;
     text-decoration: #fff;
     text-shadow: #f8f8f8;
     color: #3a4a52;
 }
 
-.panel-bland > .panel-heading {
+.panel-views > .panel-heading {
+    border-color: none;
     text-decoration: #fff;
     text-shadow: #f8f8f8;
+    color: #f8f8f8;
+}
+
+.panel-bland > .panel-heading {
+    text-decoration: #fff;
+    text-shadow: #e0e0e0;
     color: #d1d1d1;
     background-color: #f5f5f5;
     border-color: #d1d1d1;
@@ -143,13 +166,16 @@ section, article {
     border-top-color: #d1d1d1;
 }
 
+.panel-view > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #f6f5f6;
+}
+
 .panel-bland > .panel-heading .badge {
     text-decoration: #fff;
     text-shadow: #f8f8f8;
     color: #e0e1e2;
     background-color: #d1d1d1;
 }
-
 
 .btn-transparent {
     text-align: center;
@@ -182,7 +208,7 @@ a.btn-bland{font-size: 18px;}
     border-color: #122b40;
 }
 
-.btn-bland:hover, .panel-heading:hover {
+.btn-bland:hover, .panel-narrow-heading .panel-heading:hover {
     text-decoration: #fff;
     color: #fff;
     background: linear-gradient(40deg, #036, #007f9f);
