@@ -5,12 +5,15 @@
 		<section class="col-md-10 col-lg-10">
 			<div class="panel panel-views">
 				<div class="panel-heading">
-					<h2>Pre Register Visitor</h2>  					<p>Visual Studio projects.</p>
+					<h2>Pre Register Visitor</h2>  					
+					<p>Visual Studio projects.</p>
 				</div>
 				<div class="panel-body">
+				<!-- Pre-registration Form Goes Here -->
 
 					<p><a class="btn btn-default" href="#">More &raquo;</a></p>
 				</div>
+				<!-- End Pre registration Form-->
 			</div>
 		</section>
 		<section class="col-md-1 col-lg-1"></section>

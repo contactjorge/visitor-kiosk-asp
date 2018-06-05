@@ -36,6 +36,9 @@
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="Guest">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="RoomNum" Type="String" Nullable="false" annotation:StoreGeneratedPattern="None" />
           <Property Name="LastName" Type="String" Nullable="false" />

@@ -5,7 +5,7 @@
 			<div class="panel panel-views">
 				<div class="panel-heading">
 					<h2>Pre Registration Report</h2>
-					<p>Visual Studio projects.</p
+					<p>Visual Studio projects.</p>
 				</div>
 				<div class="panel-body">
 >
@@ -17,7 +17,7 @@
 			<div class="panel panel-views">
 				<div class="panel-heading">
 					<h2>Checked In Report</h2>
-					<p>Visual Studio projects.</p
+					<p>Visual Studio projects.</p>
 				</div>
 				<div class="panel-body">
 >

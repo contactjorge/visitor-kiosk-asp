@@ -21,13 +21,14 @@ namespace visitor_kiosk_asp
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-			ScriptManager.ScriptResourceMapping.AddDefinition("jquery", new ScriptResourceDefinition
-			{
-				Path = "~/scripts/jquery-3.3.1.min.js",
-				DebugPath = "~/scripts/jquery-3.3.1.min.js",
-				CdnPath = "http://ajax.microsoft.com/ajax/jQuery/jquery-3.3.1.min.js",
-				CdnDebugPath = "http://ajax.microsoft.com/ajax/jQuery/jquery-3.3.1.js"
-			});
+			ScriptManager.ScriptResourceMapping.AddDefinition("jquery", 
+				new ScriptResourceDefinition
+				{
+					Path = "~/scripts/jquery-3.3.1.min.js",
+					DebugPath = "~/scripts/jquery-3.3.1.min.js",
+					CdnPath = "http://ajax.microsoft.com/ajax/jQuery/jquery-3.3.1.min.js",
+					CdnDebugPath = "http://ajax.microsoft.com/ajax/jQuery/jquery-3.3.1.js"
+				});
 		}
     }
 }

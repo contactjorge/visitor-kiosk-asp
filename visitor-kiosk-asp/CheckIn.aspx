@@ -5,6 +5,7 @@
 		<section class="col-md-10 col-lg-10">
 			<div class="panel panel-views">
 				<div class="panel-heading"><h3>Visitor Check-In</h3></div>
+				<!-- Check-In Form Goes Here -->
 				<div class="panel-body">
 					<div class="row">
 						<div class="col-md-12">
@@ -70,6 +71,7 @@
 						<div class="col-md-3"><a class="btn btn-default" href="#">Check-In Now</a></div>
 					</div>
 				</div>
+				<!-- End Check-In Form -->
 			</div>
 		</section>
 		<section class="col-md-1 col-lg-1"></section>
