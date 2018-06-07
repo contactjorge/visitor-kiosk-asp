@@ -58,13 +58,13 @@ namespace visitor_kiosk_asp {
         protected global::System.Web.UI.WebControls.Label lblGuestFName;
         
         /// <summary>
-        /// txtGuestLName control.
+        /// txtGuesFLName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtGuestLName;
+        protected global::System.Web.UI.WebControls.TextBox txtGuesFLName;
         
         /// <summary>
         /// lblGuestLName control.
@@ -76,13 +76,13 @@ namespace visitor_kiosk_asp {
         protected global::System.Web.UI.WebControls.Label lblGuestLName;
         
         /// <summary>
-        /// txtGuestFName control.
+        /// txtGuestLName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtGuestFName;
+        protected global::System.Web.UI.WebControls.TextBox txtGuestLName;
         
         /// <summary>
         /// lblVisitReason control.

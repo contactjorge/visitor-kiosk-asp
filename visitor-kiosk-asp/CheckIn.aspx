@@ -8,11 +8,14 @@
 				<div class="panel-body">
 				<!-- Check-In Form Goes Here -->
 				<!-- Layout COMPLETE. Functionality NOT DONE -->
+					<!-- Row 1 Form Visitor Section Header -->
 					<div class="row">
 						<div class="col-md-12">
 							<h3>Enter Vistor Information</h3>
 						</div>
 					</div>
+
+					<!-- Row 2 Form Visitor Content: First Name Label, First Name TextBox -->
 					<div class="row">
 						<div class="col-md-4">
 							<asp:Label ID="lblVisitorFName" runat="server" Text="First Name"></asp:Label>
@@ -21,6 +24,8 @@
 							<asp:TextBox ID="txtVisitorFName" runat="server"></asp:TextBox>						
 						</div>
 					</div>
+
+					<!-- Row 3 Form Visitor Content: Last Name Label, Last Name TextBox -->
 					<div class="row">
 						<div class="col-md-4">
 							<asp:Label ID="lblVisitorLName" runat="server" Text="Last Name"></asp:Label>
@@ -29,6 +34,8 @@
 							<asp:TextBox ID="txtVisitorLName" runat="server"></asp:TextBox>
 						</div>
 					</div>
+
+					<!-- Row 4 Form Guest Content: First Name Label, First Name TextBox -->
 					<div class="row">
 						<div class="col-md-12">
 							<h3>Guest Information</h3>
@@ -37,17 +44,21 @@
 							<asp:Label ID="lblGuestFName" runat="server" Text="First Name"></asp:Label>
 						</div>
 						<div class="col-md-7">
-							<asp:TextBox ID="txtGuestLName" runat="server"></asp:TextBox>
+							<asp:TextBox ID="txtGuesFLName" runat="server"></asp:TextBox>
 						</div>
 					</div>
+
+					<!-- Row 5 Form Gust Content: Last Name Label, Last Name TextBox -->
 					<div class="row">
 						<div class="col-md-4">
 							<asp:Label ID="lblGuestLName" runat="server" Text="Last Name"></asp:Label>
 						</div>
 						<div class="col-md-7">
-							<asp:TextBox ID="txtGuestFName" runat="server"></asp:TextBox>
+							<asp:TextBox ID="txtGuestLName" runat="server"></asp:TextBox>
 						</div>					
 					</div>
+
+					<!-- Row 6 Form Visit Reason Content: Visit drop down -->
 					<div class="row">
 						<div class="col-md-12">
 							<h3>Visit Information</h3>
@@ -59,6 +70,8 @@
 							<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
 						</div>
 					</div>
+
+					<!-- Row 7 Form Visit Reason Content: Visit Date -->
 					<div class="row">
 						<div class="col-md-4">
 							<asp:Label ID="lblVisitDate" runat="server" Text="Visit Date"></asp:Label>
@@ -67,6 +80,8 @@
 							<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
 						</div>
 					</div>
+
+					<!-- Row 8 Form Submit Content: Submit Pre-Registration, error label -->
 					<div class="row">
 						<div class="col-md-9"></div>
 						<div class="col-md-3"><a class="btn btn-default" href="#">Check-In Now</a></div>

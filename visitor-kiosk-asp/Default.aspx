@@ -25,6 +25,7 @@
 			</div>
 			<!-- End Check-In Form -->
         </section>
+
 		<section class="col-md-6 col-lg-6" id="register-well">
 			<!-- Pre-Registration Button Goes Here -->
 			<div class="panel panel-narrow-heading panel-bland" id="register">
@@ -38,6 +39,7 @@
 			</div>
 			<!-- End Check-In Form -->
 		</section>
+
     </main>
 	<!-- End Main Content -->
 
