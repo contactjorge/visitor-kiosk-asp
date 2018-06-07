@@ -2,11 +2,11 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main class="row">
-        <section class="col-md-3 col-lg-3"><!--column padding Bootstrap trick --></section>
-        <section class="col-md-6 col-lg-6">
-			<div class="panel panel-bland">
+        <section class="col-md-2 col-lg-2"><!--column padding Bootstrap trick --></section>
+        <section class="col-md-8 col-lg-8">
+			<div class="panel panel-views">
 				<div class="panel-heading">
-					<h2><%: Title %>.</h2>
+					<h2>Help & <%: Title %>.</h2>
 				</div>
 				<div class="panel-body">
 					<!-- Application Help and Documentation Goes Here -->
@@ -16,6 +16,6 @@
 				</div>
 			</div>
         </section>
-        <section class="col-md-3 col-lg-3"><!--column padding Bootstrap trick --></section>
+        <section class="col-md-2 col-lg-2"><!--column padding Bootstrap trick --></section>
     </main>
 </asp:Content>

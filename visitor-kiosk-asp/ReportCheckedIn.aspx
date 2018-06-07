@@ -3,19 +3,34 @@
 	<main class="row">
 		<section class="col-md-1 col-lg-1"><!--column padding --></section>
 		<section class="col-md-10 col-lg-10">
-				<div class="panel panel-bland">
-					<div class="panel-heading">
-						<h2>Visitor Check-In Report</h2>
-					</div>
-					<div class="panel-body">
-					<!-- Check-In Report Form Goes Here -->
-					<!-- Layout NOT DONE. Functionality NOT DONE -->
-						<p>This will be a simple page with form for the user.</p>
-						<p>User will select a data and display all visitors that checked in on that date.</p>
-						<p><a class="btn btn-default" href="#">More &raquo;</a></p>
-					<!-- End Check-in Form-->
-					</div>
+			<div class="panel panel-views">
+				<div class="panel-heading">
+					<h2>Visitor Checked-In Report</h2>
 				</div>
+				<div class="panel-body">
+				<!-- Pre-Registration Report Form Goes Here -->
+				<!-- Layout NOT DONE. Functionality NOT DONE -->
+					<div class="row">
+						<p>This Choose a date and click submit:</p>
+					</div>
+					<div class="row">
+					<div class="col-md-6">
+						<asp:Calendar ID="calDate" runat="server"></asp:Calendar>						
+					</div>
+					<div class="col-md-6">
+						<asp:Button ID="btnSubmit" runat="server" Text="Submit" />						
+					</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<asp:Table ID="tblCheckedIn" runat="server">
+						
+							</asp:Table>
+						</div>
+					</div>
+				<!-- End Pre-Registration Form-->
+				</div>
+			</div>
 		</section>
 		<section class="col-md-1 col-lg-1"><!--column padding Bootstrap trick --></section>
     </main>

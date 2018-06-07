@@ -86,13 +86,14 @@ section, article {
     font-size: 18px;
 }
 
-#reports a{
+#reports a, .reports a {
     text-decoration: none !important;
 }
-.panel-narrow-heading a {
+
+.panel-narrow-heading a, .panel-report-heading a {
     text-decoration: none !important;
 }
-.panel-narrow-heading.panel {
+.panel-narrow-heading.panel, panel-report-heading.panel {
     margin: 1.25rem 0;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .25), 0 4px 15px 0 rgba(10, 10, 10, .15);
     border-radius: .1rem;
@@ -201,6 +202,16 @@ section, article {
 }
 
 a.btn-bland{font-size: 18px;}
+
+.btn-report {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    background: linear-gradient(30deg, #007f9f, #aea085);
+    color: #f8f8f8;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    border-radius: .1rem;
+}
 /** State Styles **/
 
 .btn-bland:focus, .btn-bland.focus {
@@ -214,6 +225,16 @@ a.btn-bland{font-size: 18px;}
     color: #fff;
     background: linear-gradient(40deg, #036, #007f9f);
     border-color: #204d74;
+}
+
+.btn-report:hover, .panel-report-heading .pane-heading:hover {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    background: linear-gradient(30deg, #aea085, #007f9f);
+    color: #f8f8f8;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    border-radius: .1rem;
 }
 
 .btn-transparent a:hover {
