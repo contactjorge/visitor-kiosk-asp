@@ -106,7 +106,12 @@
 							<asp:Label ID="lblVisitDate" runat="server" Text="Visit Date"></asp:Label>
 						</div>
 						<div class="col-md-4 col-lg-4">
-							<asp:Calendar ID="calVisitDate" runat="server" Enabled="False"></asp:Calendar>
+							<asp:TextBox ID="txtVisitDate" runat="server"></asp:TextBox>
+							<asp:Calendar ID="calVisitDate" runat="server" Enabled="True" EnableViewState="true"></asp:Calendar>
+
+							<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+							</asp:UpdatePanel>
+							
 						</div>
 						<div class="col-md-2 col-lg-2">
 							<asp:Label ID="lblVisitReason" runat="server" Text="Visit Reason"></asp:Label>
@@ -125,7 +130,9 @@
 					<!-- Row 9 Form Submit Content: Submit Pre-Registration, error label -->
 					<div class="row">
 						<div class="col-md-9"></div>
-						<div class="col-md-3"><a class="btn btn-default" href="#">Check-In Now</a></div>
+						<div class="col-md-3">
+							<asp:Button ID="btnCheckIn" runat="server" CssClass="btn btn-report" Text="Check-In Now" OnClick="btnCheckIn_Click" />
+						</div>
 					</div>
 				<!-- End Check-In Form -->
 				</div>

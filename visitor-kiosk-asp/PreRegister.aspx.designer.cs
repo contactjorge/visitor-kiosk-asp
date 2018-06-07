@@ -164,5 +164,14 @@ namespace visitor_kiosk_asp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList drpVisitReason;
+        
+        /// <summary>
+        /// btnPreRegister control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnPreRegister;
     }
 }

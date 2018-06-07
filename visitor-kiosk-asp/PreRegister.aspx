@@ -108,7 +108,7 @@
 							<asp:Label ID="lblVisitDate" runat="server" Text="Visit Date"></asp:Label>
 						</div>
 						<div class="col-md-4" aria-atomic="True">
-							<asp:Calendar ID="calVisitDate" runat="server" EnableViewState="True"></asp:Calendar>
+							<asp:Calendar ID="calVisitDate" runat="server" Enabled="True" EnableViewState="True"></asp:Calendar>
 						</div>
 						<div class="col-md-2">
 							<asp:Label ID="lblVisitReason" runat="server" Text="Visit Reason"></asp:Label>
@@ -127,7 +127,9 @@
 					<!-- Row 8 Form Submit Content: Submit Pre-Registration, error label -->
 					<div class="row">
 						<div class="col-md-9"></div>
-						<div class="col-md-3"><a class="btn btn-default" href="#">Check-In Now</a></div>
+						<div class="col-md-3">
+							<asp:Button ID="btnPreRegister" CssClass="btn btn-report" runat="server" Text="Pre-Register Visit" OnClick="btnPreRegister_Click" />
+						</div>
 					</div>
 				<!-- End Pre registration Form-->				
 				</div>
