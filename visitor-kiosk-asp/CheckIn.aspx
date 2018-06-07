@@ -5,7 +5,7 @@
 		<section class="col-md-10 col-lg-10">
 			<div class="panel panel-views">
 				<div class="panel-heading"><h3>Visitor Check-In Form</h3></div>
-				<div class="panel-body">
+				<div class="panel-body" aria-atomic="True">
 				<!-- Check-In Form Goes Here -->
 				<!-- Layout COMPLETE. Functionality NOT DONE -->
 					<!-- Row 1 Form Visitor Section Header -->
@@ -54,6 +54,7 @@
 							<hr />
 							<h3>Enter Guest Information</h3>
 							<hr />
+							<asp:Localize ID="Localize1" runat="server"></asp:Localize>
 						</div>
 					</div>
 
@@ -102,6 +103,12 @@
 					<!-- Row 8 Form Visit Reason Content: Visit drop down -->
 					<div class="row">
 						<div class="col-md-2 col-lg-2">
+							<asp:Label ID="lblVisitDate" runat="server" Text="Visit Date"></asp:Label>
+						</div>
+						<div class="col-md-4 col-lg-4">
+							<asp:Calendar ID="calVisitDate" runat="server" Enabled="False"></asp:Calendar>
+						</div>
+						<div class="col-md-2 col-lg-2">
 							<asp:Label ID="lblVisitReason" runat="server" Text="Visit Reason"></asp:Label>
 						</div>
 						<div class="col-md-4 col-lg-4">
@@ -112,12 +119,6 @@
 								<asp:ListItem Value="3">Visiting Employee</asp:ListItem>
 								<asp:ListItem Value="4">Cafeteria</asp:ListItem>
 							</asp:DropDownList>
-						</div>
-						<div class="col-md-2 col-lg-2">
-							<asp:Label ID="lblVisitDate" runat="server" Text="Visit Date"></asp:Label>
-						</div>
-						<div class="col-md-4 col-lg-4">
-							<asp:TextBox ID="txtVisitDate" CSSClass="form-control" runat="server" ToolTip="Enter Date of Visitation"></asp:TextBox>
 						</div>
 					</div>
 					

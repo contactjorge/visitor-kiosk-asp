@@ -94,6 +94,7 @@
 
 					<!-- Row 7 Form Visit Reason Header: Visit Reason Section Start -->
 					<div class="row">
+						<asp:Localize ID="Localize1" runat="server"></asp:Localize>
 						<div class="col-md-12">
 							<hr />
 							<h3>Enter Visitor Information</h3>
@@ -103,6 +104,12 @@
 					
 					<!-- Row 8 Form Visit Reason Content: Visit drop down -->
 					<div class="row">
+						<div class="col-md-2">
+							<asp:Label ID="lblVisitDate" runat="server" Text="Visit Date"></asp:Label>
+						</div>
+						<div class="col-md-4" aria-atomic="True">
+							<asp:Calendar ID="calVisitDate" runat="server" EnableViewState="True"></asp:Calendar>
+						</div>
 						<div class="col-md-2">
 							<asp:Label ID="lblVisitReason" runat="server" Text="Visit Reason"></asp:Label>
 						</div>
@@ -114,12 +121,6 @@
 								<asp:ListItem Value="3">Visiting Employee</asp:ListItem>
 								<asp:ListItem Value="4">Cafeteria</asp:ListItem>
 							</asp:DropDownList>
-						</div>
-						<div class="col-md-2">
-							<asp:Label ID="lblVisitDate" runat="server" Text="Visit Date"></asp:Label>
-						</div>
-						<div class="col-md-4">
-							<asp:TextBox ID="txtVisitDate" CSSClass="form-control" runat="server" ReadOnly="True"></asp:TextBox>
 						</div>
 					</div>
 					
