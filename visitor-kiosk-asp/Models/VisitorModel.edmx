@@ -15,13 +15,8 @@
         <EntityContainer Name="VisitorModelContainer" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Visits" EntityType="VisitorModel.Visit" />
           <EntitySet Name="Registrations" EntityType="VisitorModel.Registration" />
-          <EntitySet Name="Rooms" EntityType="VisitorModel.Room" />
           <EntitySet Name="Visitors" EntityType="VisitorModel.Visitor" />
           <EntitySet Name="Guests" EntityType="VisitorModel.Guest" />
-          <AssociationSet Name="RoomGuest" Association="VisitorModel.RoomGuest">
-            <End Role="Room" EntitySet="Rooms" />
-            <End Role="Guest" EntitySet="Guests" />
-          </AssociationSet>
           <AssociationSet Name="VisitorRegistration" Association="VisitorModel.VisitorRegistration">
             <End Role="Visitor" EntitySet="Visitors" />
             <End Role="Registration" EntitySet="Registrations" />
@@ -40,10 +35,8 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="RoomNum" Type="String" Nullable="false" annotation:StoreGeneratedPattern="None" />
           <Property Name="LastName" Type="String" Nullable="false" />
           <Property Name="FirstName" Type="String" Nullable="false" />
-          <NavigationProperty Name="Room" Relationship="VisitorModel.RoomGuest" FromRole="Guest" ToRole="Room" />
           <NavigationProperty Name="Registrations" Relationship="VisitorModel.GuestRegistration" FromRole="Guest" ToRole="Registration" />
         </EntityType>
         <EntityType Name="Visit">
@@ -51,45 +44,30 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="VisitDate" Type="String" Nullable="false" />
-          <Property Name="VisitTime" Type="String" Nullable="false" />
-          <Property Name="Registraion_Id" Type="String" Nullable="false" />
+          <Property Name="VisitDate" Type="DateTime" Nullable="false" />
+          <Property Name="VisitReason" Type="String" Nullable="false" />
           <NavigationProperty Name="Visitor" Relationship="VisitorModel.VisitorVisit" FromRole="Visit" ToRole="Visitor" />
           </EntityType>
         <EntityType Name="Registration">
           <Key>
             <PropertyRef Name="Id" />
+            <PropertyRef Name="RoomId" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <NavigationProperty Name="Visitor" Relationship="VisitorModel.VisitorRegistration" FromRole="Registration" ToRole="Visitor" />
           <NavigationProperty Name="Guest" Relationship="VisitorModel.GuestRegistration" FromRole="Registration" ToRole="Guest" />
-        </EntityType>
-        <EntityType Name="Room">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="RoomNum" Type="String" Nullable="false" />
-          <NavigationProperty Name="Guests" Relationship="VisitorModel.RoomGuest" FromRole="Room" ToRole="Guest" />
+          <Property Name="RoomId" Type="Int16" Nullable="false" />
         </EntityType>
         <EntityType Name="Visitor">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Registration_Id" Type="String" Nullable="false" />
-          <Property Name="Visit_Id" Type="String" Nullable="false" />
           <Property Name="LastName" Type="String" Nullable="false" />
           <Property Name="FirstName" Type="String" Nullable="false" />
-          <Property Name="Property3" Type="String" Nullable="false" />
-          <Property Name="Property1" Type="String" Nullable="false" />
           <NavigationProperty Name="Registrations" Relationship="VisitorModel.VisitorRegistration" FromRole="Visitor" ToRole="Registration" />
           <NavigationProperty Name="Visits" Relationship="VisitorModel.VisitorVisit" FromRole="Visitor" ToRole="Visit" />
         </EntityType>
-        <Association Name="RoomGuest">
-          <End Type="VisitorModel.Room" Role="Room" Multiplicity="1" />
-          <End Type="VisitorModel.Guest" Role="Guest" Multiplicity="*" />
-        </Association>
         <Association Name="VisitorRegistration">
           <End Type="VisitorModel.Visitor" Role="Visitor" Multiplicity="1" />
           <End Type="VisitorModel.Registration" Role="Registration" Multiplicity="*" />
