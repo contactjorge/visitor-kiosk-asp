@@ -14,15 +14,18 @@
 						<p>This Choose a date and click submit:</p>
 					</div>
 					<div class="row">
-					<div class="col-md-6">
-						<asp:Calendar ID="calDate" runat="server"></asp:Calendar>						
-					</div>
-					<div class="col-md-6">
-						<asp:Button ID="btnSubmit" runat="server" Text="Submit" />						
-					</div>
+						<div class="col-md-6 col-lg-6">
+							<div class="input-group date">
+								<asp:TextBox ID="txtPreRegisteredDate" CSSClass="form-control" type="date" runat="server"></asp:TextBox>
+								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+							</div>								
+						</div>
+						<div class="col-md-6 col-lg-6">
+							<asp:Button ID="btnSubmit" runat="server" Text="Submit" />						
+						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-12 col-lg-12">
 							<asp:Table ID="tblPreRegistraion" runat="server">
 						
 							</asp:Table>

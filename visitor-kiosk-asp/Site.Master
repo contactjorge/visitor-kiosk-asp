@@ -53,8 +53,8 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/PreRegister">Pre-Register</a></li>
 						<li><a runat="server" href="~/CheckIn">Check-In</a></li>
+						<li><a runat="server" href="~/PreRegister">Pre-Register</a></li>
                         <li><a runat="server" href="~/Reports">Reports</a></li>
                         <li><a runat="server" href="~/About">Help</a></li>
                     </ul>

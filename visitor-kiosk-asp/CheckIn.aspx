@@ -38,13 +38,16 @@
 							<asp:Label ID="lblDOB" runat="server" Text="Visitor DOB"></asp:Label>
 						</div>
 						<div class="col-md-4 col-lg-4">
-							<asp:TextBox ID="txtDOB" CSSClass="form-control" runat="server"></asp:TextBox>
+							<div class="input-group date">
+								<asp:TextBox ID="txtDOB" type="date" CSSClass="form-control" runat="server"></asp:TextBox>		
+								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+							</div>	
 						</div>
 						<div class="col-md-2">
 
 						</div>
 						<div class="col-md-4">
-
+							<asp:Button ID="btnLookupGuest" CssClass="btn btn-report" Text="Lookup Guest" runat="server" />
 						</div>
 					</div>
 
@@ -64,13 +67,13 @@
 							<asp:Label ID="lblGuestFName" runat="server" Text="First Name"></asp:Label>
 						</div>
 						<div class="col-md-4 col-lg-4">
-							<asp:TextBox ID="txtGuesFLName" CSSClass="form-control" runat="server"></asp:TextBox>
+							<asp:TextBox ID="txtGuesFLName" CSSClass="form-control" runat="server" Enabled="False"></asp:TextBox>
 						</div>
 						<div class="col-md-2 col-lg-2">
 							<asp:Label ID="lblGuestLName" runat="server" Text="Last Name"></asp:Label>
 						</div>
 						<div class="col-md-4 col-lg-4">
-							<asp:TextBox ID="txtGuestLName" CSSClass="form-control" runat="server"></asp:TextBox>
+							<asp:TextBox ID="txtGuestLName" CSSClass="form-control" runat="server" Enabled="False"></asp:TextBox>
 						</div>					
 
 					</div>
@@ -81,7 +84,7 @@
 							<asp:Label ID="lblRoomNum" runat="server" Text="Room #"></asp:Label>
 						</div>
 						<div class="col-md-4 col-lg-4">
-							<asp:TextBox ID="txtRoomNum" CSSClass="form-control" runat="server"></asp:TextBox>
+							<asp:TextBox ID="txtRoomNum" CSSClass="form-control" runat="server" Enabled="False"></asp:TextBox>
 						</div>
 						<div class="col-md-2">
 
@@ -106,18 +109,16 @@
 							<asp:Label ID="lblVisitDate" runat="server" Text="Visit Date"></asp:Label>
 						</div>
 						<div class="col-md-4 col-lg-4">
-							<asp:TextBox ID="txtVisitDate" runat="server"></asp:TextBox>
-							<asp:Calendar ID="calVisitDate" runat="server" Enabled="True" EnableViewState="true"></asp:Calendar>
-
-							<asp:UpdatePanel ID="UpdatePanel1" runat="server">
-							</asp:UpdatePanel>
-							
+							<div class="input-group date" aria-atomic="True">
+								<asp:TextBox ID="txtVisitDate" type="date" runat="server" CssClass="form-control" Enabled="False"></asp:TextBox>						
+								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+							</div>
 						</div>
 						<div class="col-md-2 col-lg-2">
 							<asp:Label ID="lblVisitReason" runat="server" Text="Visit Reason"></asp:Label>
 						</div>
 						<div class="col-md-4 col-lg-4">
-							<asp:DropDownList ID="drpVisitReason" CSSClass="form-control" runat="server">
+							<asp:DropDownList ID="drpVisitReason" CSSClass="form-control" runat="server" Enabled="False">
 								<asp:ListItem Value="0">Out Patient Visit</asp:ListItem>
 								<asp:ListItem Value="1">Visiting Patient</asp:ListItem>
 								<asp:ListItem Value="2">Physical Therapy</asp:ListItem>
@@ -140,4 +141,9 @@
 		</section>
 		<section class="col-md-1 col-lg-1"><!--column padding Bootstrap trick --></section>
     </main>
+	<script type="text/javascript">
+		$(function () {
+                $('#txtVisitDate').datetimepicker({locale: 'en'});
+		});
+	</script>
 </asp:Content>

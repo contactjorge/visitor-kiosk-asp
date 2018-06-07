@@ -15,7 +15,10 @@
 					</div>
 					<div class="row">
 					<div class="col-md-6">
-						<asp:Calendar ID="calDate" runat="server"></asp:Calendar>						
+						<div class="input-group date">
+							<asp:TextBox ID="txtCheckedInDate" CSSClass="form-control" type="date" runat="server"></asp:TextBox>
+							<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+						</div>					
 					</div>
 					<div class="col-md-6">
 						<asp:Button ID="btnSubmit" runat="server" Text="Submit" />						

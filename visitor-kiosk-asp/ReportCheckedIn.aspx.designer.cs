@@ -13,13 +13,13 @@ namespace visitor_kiosk_asp {
     public partial class ReportRegistered {
         
         /// <summary>
-        /// calDate control.
+        /// txtCheckedInDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar calDate;
+        protected global::System.Web.UI.WebControls.TextBox txtCheckedInDate;
         
         /// <summary>
         /// btnSubmit control.

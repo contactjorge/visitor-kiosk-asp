@@ -139,13 +139,13 @@ namespace visitor_kiosk_asp {
         protected global::System.Web.UI.WebControls.Label lblVisitDate;
         
         /// <summary>
-        /// calVisitDate control.
+        /// txtVisitDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar calVisitDate;
+        protected global::System.Web.UI.WebControls.TextBox txtVisitDate;
         
         /// <summary>
         /// lblVisitReason control.
