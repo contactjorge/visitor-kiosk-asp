@@ -22,13 +22,13 @@
 							<asp:Label ID="lblVisitorFName" runat="server" Text="First Name"></asp:Label>
 						</div>
 						<div class="col-md-4 col-lg-4">
-							<asp:TextBox ID="txtVisitorFName" runat="server"></asp:TextBox>						
+							<asp:TextBox ID="txtVisitorFName" CSSClass="form-control"  runat="server"></asp:TextBox>						
 						</div>
 						<div class="col-md-2 col-lg-2">
 							<asp:Label ID="lblVisitorLName" runat="server" Text="Last Name"></asp:Label>
 						</div>
 						<div class="col-md-4 col-lg-4">
-							<asp:TextBox ID="txtVisitorLName" runat="server"></asp:TextBox>
+							<asp:TextBox ID="txtVisitorLName" CSSClass="form-control"  runat="server"></asp:TextBox>
 						</div>
 					</div>
 
@@ -38,7 +38,7 @@
 							<asp:Label ID="lblDOB" runat="server" Text="Visitor DOB"></asp:Label>
 						</div>
 						<div class="col-md-4 col-lg-4">
-							<asp:TextBox ID="txtDOB" runat="server"></asp:TextBox>
+							<asp:TextBox ID="txtDOB" CSSClass="form-control" runat="server"></asp:TextBox>
 						</div>
 						<div class="col-md-2">
 
@@ -63,13 +63,13 @@
 							<asp:Label ID="lblGuestFName" runat="server" Text="First Name"></asp:Label>
 						</div>
 						<div class="col-md-4 col-lg-4">
-							<asp:TextBox ID="txtGuesFLName" runat="server"></asp:TextBox>
+							<asp:TextBox ID="txtGuesFLName" CSSClass="form-control" runat="server"></asp:TextBox>
 						</div>
 						<div class="col-md-2 col-lg-2">
 							<asp:Label ID="lblGuestLName" runat="server" Text="Last Name"></asp:Label>
 						</div>
 						<div class="col-md-4 col-lg-4">
-							<asp:TextBox ID="txtGuestLName" runat="server"></asp:TextBox>
+							<asp:TextBox ID="txtGuestLName" CSSClass="form-control" runat="server"></asp:TextBox>
 						</div>					
 
 					</div>
@@ -80,7 +80,7 @@
 							<asp:Label ID="lblRoomNum" runat="server" Text="Room #"></asp:Label>
 						</div>
 						<div class="col-md-4 col-lg-4">
-							<asp:TextBox ID="txtRoomNum" runat="server"></asp:TextBox>
+							<asp:TextBox ID="txtRoomNum" CSSClass="form-control" runat="server"></asp:TextBox>
 						</div>
 						<div class="col-md-2">
 
@@ -92,7 +92,7 @@
 
 					<!-- Row 7 Form Visit Reason Header: Visit Reason Section Start -->
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-12 col-lg-12">
 							<hr />
 							<h3>Enter Visitor Information</h3>
 							<hr />
@@ -101,17 +101,23 @@
 
 					<!-- Row 8 Form Visit Reason Content: Visit drop down -->
 					<div class="row">
-						<div class="col-md-2">
+						<div class="col-md-2 col-lg-2">
 							<asp:Label ID="lblVisitReason" runat="server" Text="Visit Reason"></asp:Label>
 						</div>
-						<div class="col-md-4">
-							<asp:TextBox ID="txtVisitReason" runat="server"></asp:TextBox>
+						<div class="col-md-4 col-lg-4">
+							<asp:DropDownList ID="drpVisitReason" CSSClass="form-control" runat="server">
+								<asp:ListItem Value="0">Out Patient Visit</asp:ListItem>
+								<asp:ListItem Value="1">Visiting Patient</asp:ListItem>
+								<asp:ListItem Value="2">Physical Therapy</asp:ListItem>
+								<asp:ListItem Value="3">Visiting Employee</asp:ListItem>
+								<asp:ListItem Value="4">Cafeteria</asp:ListItem>
+							</asp:DropDownList>
 						</div>
-						<div class="col-md-2">
+						<div class="col-md-2 col-lg-2">
 							<asp:Label ID="lblVisitDate" runat="server" Text="Visit Date"></asp:Label>
 						</div>
-						<div class="col-md-4">
-							<asp:TextBox ID="txtVisitDate" runat="server"></asp:TextBox>
+						<div class="col-md-4 col-lg-4">
+							<asp:TextBox ID="txtVisitDate" CSSClass="form-control" runat="server" ToolTip="Enter Date of Visitation"></asp:TextBox>
 						</div>
 					</div>
 					

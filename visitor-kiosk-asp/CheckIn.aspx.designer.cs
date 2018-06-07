@@ -130,13 +130,13 @@ namespace visitor_kiosk_asp {
         protected global::System.Web.UI.WebControls.Label lblVisitReason;
         
         /// <summary>
-        /// txtVisitReason control.
+        /// drpVisitReason control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtVisitReason;
+        protected global::System.Web.UI.WebControls.DropDownList drpVisitReason;
         
         /// <summary>
         /// lblVisitDate control.
