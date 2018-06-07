@@ -6,13 +6,11 @@
     <edmx:Diagrams>
       <Diagram DiagramId="2b16288e386e46329454bfd29058b909" Name="Diagram1" >
         <EntityTypeShape EntityType="VisitorModel.Guest" Width="1.5" PointX="0.5" PointY="2.125" />
-        <EntityTypeShape EntityType="VisitorModel.Visit" Width="1.5" PointX="6.625" PointY="5.75" />
-        <EntityTypeShape EntityType="VisitorModel.Registration" Width="1.625" PointX="3.625" PointY="2.125" />
-        <EntityTypeShape EntityType="VisitorModel.Visitor" Width="1.625" PointX="3.625" PointY="5.5" />
+        <EntityTypeShape EntityType="VisitorModel.Registration" Width="1.625" PointX="3.5" PointY="2.125" />
+        <EntityTypeShape EntityType="VisitorModel.Visitor" Width="1.625" PointX="6.5" PointY="2.125" />
         <AssociationConnector Association="VisitorModel.VisitorRegistration" />
         <AssociationConnector Association="VisitorModel.GuestRegistration" ManuallyRouted="false" >
         </AssociationConnector>
-        <AssociationConnector Association="VisitorModel.VisitorVisit" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

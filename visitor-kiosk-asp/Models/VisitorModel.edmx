@@ -13,7 +13,6 @@
     <edmx:ConceptualModels>
       <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="VisitorModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
         <EntityContainer Name="VisitorModelContainer" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Visits" EntityType="VisitorModel.Visit" />
           <EntitySet Name="Registrations" EntityType="VisitorModel.Registration" />
           <EntitySet Name="Visitors" EntityType="VisitorModel.Visitor" />
           <EntitySet Name="Guests" EntityType="VisitorModel.Guest" />
@@ -25,10 +24,6 @@
             <End Role="Guest" EntitySet="Guests" />
             <End Role="Registration" EntitySet="Registrations" />
           </AssociationSet>
-          <AssociationSet Name="VisitorVisit" Association="VisitorModel.VisitorVisit">
-            <End Role="Visitor" EntitySet="Visitors" />
-            <End Role="Visit" EntitySet="Visits" />
-          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Guest">
           <Key>
@@ -39,15 +34,6 @@
           <Property Name="FirstName" Type="String" Nullable="false" />
           <NavigationProperty Name="Registrations" Relationship="VisitorModel.GuestRegistration" FromRole="Guest" ToRole="Registration" />
         </EntityType>
-        <EntityType Name="Visit">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="VisitDate" Type="DateTime" Nullable="false" />
-          <Property Name="VisitReason" Type="String" Nullable="false" />
-          <NavigationProperty Name="Visitor" Relationship="VisitorModel.VisitorVisit" FromRole="Visit" ToRole="Visitor" />
-          </EntityType>
         <EntityType Name="Registration">
           <Key>
             <PropertyRef Name="Id" />
@@ -57,6 +43,9 @@
           <NavigationProperty Name="Visitor" Relationship="VisitorModel.VisitorRegistration" FromRole="Registration" ToRole="Visitor" />
           <NavigationProperty Name="Guest" Relationship="VisitorModel.GuestRegistration" FromRole="Registration" ToRole="Guest" />
           <Property Name="RoomId" Type="Int16" Nullable="false" />
+          <Property Name="VisitReason" Type="String" Nullable="false" />
+          <Property Name="VisitDate" Type="DateTime" Nullable="false" />
+          <Property Name="CheckInDate" Type="DateTime" Nullable="false" />
         </EntityType>
         <EntityType Name="Visitor">
           <Key>
@@ -66,7 +55,7 @@
           <Property Name="LastName" Type="String" Nullable="false" />
           <Property Name="FirstName" Type="String" Nullable="false" />
           <NavigationProperty Name="Registrations" Relationship="VisitorModel.VisitorRegistration" FromRole="Visitor" ToRole="Registration" />
-          <NavigationProperty Name="Visits" Relationship="VisitorModel.VisitorVisit" FromRole="Visitor" ToRole="Visit" />
+          <Property Name="DOB" Type="DateTime" Nullable="false" />
         </EntityType>
         <Association Name="VisitorRegistration">
           <End Type="VisitorModel.Visitor" Role="Visitor" Multiplicity="1" />
@@ -75,10 +64,6 @@
         <Association Name="GuestRegistration">
           <End Type="VisitorModel.Guest" Role="Guest" Multiplicity="1" />
           <End Type="VisitorModel.Registration" Role="Registration" Multiplicity="*" />
-        </Association>
-        <Association Name="VisitorVisit">
-          <End Type="VisitorModel.Visitor" Role="Visitor" Multiplicity="1" />
-          <End Type="VisitorModel.Visit" Role="Visit" Multiplicity="*" />
         </Association>
       </Schema>
     </edmx:ConceptualModels>
