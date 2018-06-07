@@ -200,7 +200,7 @@
     </Content>
     <Content Include="PreRegister.aspx" />
     <Content Include="ReportPreRegistration.aspx" />
-    <Content Include="ReportRegistered.aspx" />
+    <Content Include="ReportCheckedIn.aspx" />
     <Content Include="Reports.aspx" />
     <EntityDeploy Include="Models\VisitorModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -302,12 +302,12 @@
     <Compile Include="ReportPreRegistration.aspx.designer.cs">
       <DependentUpon>ReportPreRegistration.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ReportRegistered.aspx.cs">
-      <DependentUpon>ReportRegistered.aspx</DependentUpon>
+    <Compile Include="ReportCheckedIn.aspx.cs">
+      <DependentUpon>ReportCheckedIn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ReportRegistered.aspx.designer.cs">
-      <DependentUpon>ReportRegistered.aspx</DependentUpon>
+    <Compile Include="ReportCheckedIn.aspx.designer.cs">
+      <DependentUpon>ReportCheckedIn.aspx</DependentUpon>
     </Compile>
     <Compile Include="Reports.aspx.cs">
       <DependentUpon>Reports.aspx</DependentUpon>
