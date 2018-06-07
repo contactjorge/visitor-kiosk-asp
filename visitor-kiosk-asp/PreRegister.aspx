@@ -5,8 +5,7 @@
 		<section class="col-md-10 col-lg-10">
 			<div class="panel panel-views">
 				<div class="panel-heading">
-					<h2>Pre Register Visitor</h2>  					
-					<p>Pre-registration form.</p>
+					<h3>Visitor Pre-registration form</h3>  					
 				</div>
 				<div class="panel-body">
 				<!-- Pre-registration Form Goes Here -->

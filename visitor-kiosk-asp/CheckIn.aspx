@@ -4,7 +4,7 @@
 		<section class="col-md-1 col-lg-1"><!--column padding Bootstrap trick --></section>
 		<section class="col-md-10 col-lg-10">
 			<div class="panel panel-views">
-				<div class="panel-heading"><h3>Visitor Check-In</h3></div>
+				<div class="panel-heading"><h3>Visitor Check-In Form</h3></div>
 				<div class="panel-body">
 				<!-- Check-In Form Goes Here -->
 				<!-- Layout COMPLETE. Functionality NOT DONE -->
@@ -18,16 +18,16 @@
 
 					<!-- Row 2 Form Visitor Content: First Name Label, First Name TextBox -->
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-md-2 col-lg-2">
 							<asp:Label ID="lblVisitorFName" runat="server" Text="First Name"></asp:Label>
 						</div>
-						<div class="col-md-7">
+						<div class="col-md-4 col-lg-4">
 							<asp:TextBox ID="txtVisitorFName" runat="server"></asp:TextBox>						
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-2 col-lg-2">
 							<asp:Label ID="lblVisitorLName" runat="server" Text="Last Name"></asp:Label>
 						</div>
-						<div class="col-md-7">
+						<div class="col-md-4 col-lg-4">
 							<asp:TextBox ID="txtVisitorLName" runat="server"></asp:TextBox>
 						</div>
 					</div>
@@ -101,25 +101,21 @@
 
 					<!-- Row 8 Form Visit Reason Content: Visit drop down -->
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-md-2">
 							<asp:Label ID="lblVisitReason" runat="server" Text="Visit Reason"></asp:Label>
 						</div>
-						<div class="col-md-7">
-							<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-						</div>
-					</div>
-
-					<!-- Row 9 Form Visit Reason Content: Visit Date -->
-					<div class="row">
 						<div class="col-md-4">
+							<asp:TextBox ID="txtVisitReason" runat="server"></asp:TextBox>
+						</div>
+						<div class="col-md-2">
 							<asp:Label ID="lblVisitDate" runat="server" Text="Visit Date"></asp:Label>
 						</div>
-						<div class="col-md-7">
-							<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+						<div class="col-md-4">
+							<asp:TextBox ID="txtVisitDate" runat="server"></asp:TextBox>
 						</div>
 					</div>
-
-					<!-- Row 10 Form Submit Content: Submit Pre-Registration, error label -->
+					
+					<!-- Row 9 Form Submit Content: Submit Pre-Registration, error label -->
 					<div class="row">
 						<div class="col-md-9"></div>
 						<div class="col-md-3"><a class="btn btn-default" href="#">Check-In Now</a></div>
