@@ -110,8 +110,8 @@
 						</div>
 						<div class="col-md-4 col-lg-4">
 							<div class="input-group date" aria-atomic="True">
-								<asp:TextBox ID="txtVisitDate" type="date" runat="server" CssClass="form-control" Enabled="False"></asp:TextBox>						
 								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+								<asp:TextBox ID="txtVisitDate" type="date" runat="server" CssClass="form-control" Enabled="False"></asp:TextBox>						
 							</div>
 						</div>
 						<div class="col-md-2 col-lg-2">

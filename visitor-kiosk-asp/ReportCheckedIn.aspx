@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ReportCheckedIn.aspx.cs" Inherits="visitor_kiosk_asp.ReportRegistered" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 	<main class="row">
-		<section class="col-md-1 col-lg-1"><!--column padding --></section>
+		<aside class="col-md-1 col-lg-1"><!--column padding --></aside>
 		<section class="col-md-10 col-lg-10">
 			<div class="panel panel-views">
 				<div class="panel-heading">
@@ -14,15 +14,15 @@
 						<p>This Choose a date and click submit:</p>
 					</div>
 					<div class="row">
-					<div class="col-md-6">
-						<div class="input-group date">
-							<asp:TextBox ID="txtCheckedInDate" CSSClass="form-control" type="date" runat="server"></asp:TextBox>
-							<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-						</div>					
-					</div>
-					<div class="col-md-6">
-						<asp:Button ID="btnSubmit" runat="server" Text="Submit" />						
-					</div>
+						<div class="col-md-6 col-lg-6">
+							<div class="input-group date">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+								<asp:TextBox ID="txtCheckedInDate" type="date" CssClass="form-control" runat="server"></asp:TextBox>
+							</div>					
+						</div>
+						<div class="col-md-6 col-lg-6">
+							<asp:Button ID="btnSubmit" CssClass="btn btn-report" runat="server" Text="Submit" />						
+						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
@@ -35,6 +35,6 @@
 				</div>
 			</div>
 		</section>
-		<section class="col-md-1 col-lg-1"><!--column padding Bootstrap trick --></section>
+		<aside class="col-md-1 col-lg-1"><!--column padding Bootstrap trick --></aside>
     </main>
 </asp:Content>
