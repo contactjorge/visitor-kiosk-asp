@@ -8,11 +8,12 @@
 						<h2>Visitor Pre-registration Report</h2>
 					</div>
 					<div class="panel-body">
-			<!-- Check-In Report Form Goes Here -->
+				<!-- Pre-Registration Report Form Goes Here -->
+				<!-- Layout NOT DONE. Functionality NOT DONE -->
 						<p>This will be a simple page with form for the user.</p>
 						<p>User will select a data and display all visitors that checked in on that date.</p>
 						<p><a class="btn btn-default" href="#">More &raquo;</a></p>
-			<!-- End Check-in Form-->
+				<!-- End Pre-Registration Form-->
 					</div>
 				</div>
 		</section>

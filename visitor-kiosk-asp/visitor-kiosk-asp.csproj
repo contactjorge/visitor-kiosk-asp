@@ -177,7 +177,6 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="CheckIn.aspx" />
-    <Content Include="ChooseAction.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -264,13 +263,6 @@
     </Compile>
     <Compile Include="CheckIn.aspx.designer.cs">
       <DependentUpon>CheckIn.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ChooseAction.aspx.cs">
-      <DependentUpon>ChooseAction.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ChooseAction.aspx.designer.cs">
-      <DependentUpon>ChooseAction.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

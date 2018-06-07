@@ -10,9 +10,10 @@
 				</div>
 				<div class="panel-body">
 				<!-- Pre-registration Form Goes Here -->
-						<p>This will be a simple page with form for the user.</p>
-						<p>User will select a data and display all visitors that checked in on that date.</p>
-						<p><a class="btn btn-default" href="#">More &raquo;</a></p>
+				<!-- Layout NOT DONE. Functionality NOT DONE -->
+					<p>This will be a simple page with form for the user.</p>
+					<p>User will select a data and display all visitors that checked in on that date.</p>
+					<p><a class="btn btn-default" href="#">More &raquo;</a></p>
 				<!-- End Pre registration Form-->				
 				</div>
 			</div>
