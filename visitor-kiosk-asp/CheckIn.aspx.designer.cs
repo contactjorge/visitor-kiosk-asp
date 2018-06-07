@@ -76,15 +76,6 @@ namespace visitor_kiosk_asp {
         protected global::System.Web.UI.WebControls.Button btnLookupGuest;
         
         /// <summary>
-        /// Localize1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Localize Localize1;
-        
-        /// <summary>
         /// lblGuestFName control.
         /// </summary>
         /// <remarks>
@@ -94,13 +85,13 @@ namespace visitor_kiosk_asp {
         protected global::System.Web.UI.WebControls.Label lblGuestFName;
         
         /// <summary>
-        /// txtGuesFLName control.
+        /// txtGuestFName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtGuesFLName;
+        protected global::System.Web.UI.WebControls.TextBox txtGuestFName;
         
         /// <summary>
         /// lblGuestLName control.
@@ -182,5 +173,41 @@ namespace visitor_kiosk_asp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCheckIn;
+        
+        /// <summary>
+        /// lblError1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError1;
+        
+        /// <summary>
+        /// lblError2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError2;
+        
+        /// <summary>
+        /// lblError3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError3;
+        
+        /// <summary>
+        /// lblError4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError4;
     }
 }

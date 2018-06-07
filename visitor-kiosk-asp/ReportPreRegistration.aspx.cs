@@ -13,5 +13,10 @@ namespace visitor_kiosk_asp
 		{
 
 		}
+
+		protected void btnRunReport_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

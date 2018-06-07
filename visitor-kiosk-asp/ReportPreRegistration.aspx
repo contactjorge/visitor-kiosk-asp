@@ -16,12 +16,12 @@
 					<div class="row">
 						<div class="col-md-6 col-lg-6">
 							<div class="input-group date">
-								<asp:TextBox ID="txtPreRegisteredDate" CSSClass="form-control" type="date" runat="server"></asp:TextBox>
+								<asp:TextBox ID="txtPreRegisteredDate" type="date" CSSClass="form-control" runat="server"></asp:TextBox>
 								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 							</div>								
 						</div>
 						<div class="col-md-6 col-lg-6">
-							<asp:Button ID="btnSubmit" runat="server" Text="Submit" />						
+							<asp:Button ID="btnRunReport" runat="server" Text="Run Report"  CssClass="btn btn-report" OnClick="btnRunReport_Click" />						
 						</div>
 					</div>
 					<div class="row">

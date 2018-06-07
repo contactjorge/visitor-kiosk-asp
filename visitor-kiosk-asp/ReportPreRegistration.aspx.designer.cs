@@ -22,13 +22,13 @@ namespace visitor_kiosk_asp {
         protected global::System.Web.UI.WebControls.TextBox txtPreRegisteredDate;
         
         /// <summary>
-        /// btnSubmit control.
+        /// btnRunReport control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSubmit;
+        protected global::System.Web.UI.WebControls.Button btnRunReport;
         
         /// <summary>
         /// tblPreRegistraion control.

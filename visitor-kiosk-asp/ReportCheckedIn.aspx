@@ -21,7 +21,7 @@
 							</div>					
 						</div>
 						<div class="col-md-6 col-lg-6">
-							<asp:Button ID="btnSubmit" CssClass="btn btn-report" runat="server" Text="Submit" />						
+							<asp:Button ID="btnRunReport" Text="Run Report" CssClass="btn btn-report" runat="server" OnClick="btnRunReport_Click" />						
 						</div>
 					</div>
 					<div class="row">

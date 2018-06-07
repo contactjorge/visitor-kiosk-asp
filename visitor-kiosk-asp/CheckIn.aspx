@@ -47,7 +47,7 @@
 
 						</div>
 						<div class="col-md-4">
-							<asp:Button ID="btnLookupGuest" CssClass="btn btn-report" Text="Lookup Guest" runat="server" />
+							<asp:Button ID="btnLookupGuest" CssClass="btn btn-report" Text="Lookup Guest" runat="server" OnClick="btnLookupGuest_Click" />
 						</div>
 					</div>
 
@@ -57,7 +57,6 @@
 							<hr />
 							<h3>Enter Guest Information</h3>
 							<hr />
-							<asp:Localize ID="Localize1" runat="server"></asp:Localize>
 						</div>
 					</div>
 
@@ -67,7 +66,7 @@
 							<asp:Label ID="lblGuestFName" runat="server" Text="First Name"></asp:Label>
 						</div>
 						<div class="col-md-4 col-lg-4">
-							<asp:TextBox ID="txtGuesFLName" CSSClass="form-control" runat="server" Enabled="False"></asp:TextBox>
+							<asp:TextBox ID="txtGuestFName" CSSClass="form-control" runat="server" Enabled="False"></asp:TextBox>
 						</div>
 						<div class="col-md-2 col-lg-2">
 							<asp:Label ID="lblGuestLName" runat="server" Text="Last Name"></asp:Label>
@@ -135,15 +134,18 @@
 							<asp:Button ID="btnCheckIn" runat="server" CssClass="btn btn-report" Text="Check-In Now" OnClick="btnCheckIn_Click" />
 						</div>
 					</div>
+
+					<!-- Row 10 Form Errors as Labels -->
+					<div class="row">
+						<div class="col-md-3 col-lg-3"><asp:Label ID="lblError1" runat="server" Text=""></asp:Label></div>
+						<div class="col-md-3 col-lg-3"><asp:Label ID="lblError2" runat="server" Text=""></asp:Label></div>
+						<div class="col-md-3 col-lg-3"><asp:Label ID="lblError3" runat="server" Text=""></asp:Label></div>
+						<div class="col-md-3 col-lg-3"><asp:Label ID="lblError4" runat="server" Text=""></asp:Label></div>
+					</div>
 				<!-- End Check-In Form -->
 				</div>
 			</div>
 		</section>
 		<section class="col-md-1 col-lg-1"><!--column padding Bootstrap trick --></section>
     </main>
-	<script type="text/javascript">
-		$(function () {
-                $('#txtVisitDate').datetimepicker({locale: 'en'});
-		});
-	</script>
 </asp:Content>

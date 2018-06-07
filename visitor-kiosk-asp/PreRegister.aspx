@@ -129,12 +129,20 @@
 						</div>
 					</div>
 					
-					<!-- Row 8 Form Submit Content: Submit Pre-Registration, error label -->
+					<!-- Row 9 Form Submit Content: Submit Pre-Registration, error label -->
 					<div class="row">
 						<div class="col-md-9"></div>
 						<div class="col-md-3">
 							<asp:Button ID="btnPreRegister" CssClass="btn btn-report" runat="server" Text="Pre-Register Visit" OnClick="btnPreRegister_Click" />
 						</div>
+					</div>
+
+					<!-- Row 10 Form Errors as Labels -->
+					<div class="row">
+						<div class="col-md-3 col-lg-3"><asp:Label ID="lblError1" runat="server" Text=""></asp:Label></div>
+						<div class="col-md-3 col-lg-3"><asp:Label ID="lblError2" runat="server" Text=""></asp:Label></div>
+						<div class="col-md-3 col-lg-3"><asp:Label ID="lblError3" runat="server" Text=""></asp:Label></div>
+						<div class="col-md-3 col-lg-3"><asp:Label ID="lblError4" runat="server" Text=""></asp:Label></div>
 					</div>
 				<!-- End Pre registration Form-->				
 				</div>
