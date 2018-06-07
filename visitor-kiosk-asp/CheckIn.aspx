@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CheckIn.aspx.cs" Inherits="visitor_kiosk_asp.CheckIn" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 	<main class="row">
-		<section class="col-md-1 col-lg-1"></section>
+		<section class="col-md-1 col-lg-1"><!--column padding Bootstrap trick --></section>
 		<section class="col-md-10 col-lg-10">
 			<div class="panel panel-views">
 				<div class="panel-heading"><h3>Visitor Check-In</h3></div>
@@ -74,6 +74,6 @@
 				<!-- End Check-In Form -->
 			</div>
 		</section>
-		<section class="col-md-1 col-lg-1"></section>
+		<section class="col-md-1 col-lg-1"><!--column padding Bootstrap trick --></section>
     </main>
 </asp:Content>
