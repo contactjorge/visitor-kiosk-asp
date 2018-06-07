@@ -39,7 +39,7 @@ namespace visitor_kiosk_asp
 			_guestLName = txtGuestLName.Text;
 			_guestRoomNum = txtRoomNum.Text;
 
-			//			if (_guestFName == )
+			
 		}
 	}
 }
