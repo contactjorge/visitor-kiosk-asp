@@ -17,14 +17,15 @@ namespace visitor_kiosk_asp.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Guest()
         {
-            this.Registrations = new HashSet<Registration>();
+            this.Visitor = new HashSet<Visitor>();
         }
     
         public int Id { get; set; }
+        public string RoomId { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Registration> Registrations { get; set; }
+        public virtual ICollection<Visitor> Visitor { get; set; }
     }
 }

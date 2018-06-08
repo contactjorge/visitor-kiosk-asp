@@ -17,6 +17,7 @@ namespace visitor_kiosk_asp.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Visitor()
         {
+            this.Guests = new HashSet<Guest>();
             this.Registrations = new HashSet<Registration>();
         }
     
@@ -25,6 +26,8 @@ namespace visitor_kiosk_asp.Models
         public string FirstName { get; set; }
         public System.DateTime DOB { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Guest> Guests { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Registration> Registrations { get; set; }
     }

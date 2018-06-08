@@ -15,12 +15,10 @@ namespace visitor_kiosk_asp.Models
     public partial class Registration
     {
         public int Id { get; set; }
-        public short RoomId { get; set; }
-        public string VisitReason { get; set; }
+        public short VisitReason { get; set; }
         public System.DateTime VisitDate { get; set; }
         public System.DateTime CheckInDate { get; set; }
     
         public virtual Visitor Visitor { get; set; }
-        public virtual Guest Guest { get; set; }
     }
 }

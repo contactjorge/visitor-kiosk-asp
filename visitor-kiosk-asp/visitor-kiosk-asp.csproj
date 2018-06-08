@@ -216,13 +216,14 @@
     <Content Include="ReportPreRegistration.aspx" />
     <Content Include="ReportCheckedIn.aspx" />
     <Content Include="Reports.aspx" />
-    <EntityDeploy Include="Models\VisitorModel.edmx">
+    <Content Include="Models\VisitorModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>VisitorModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
+    </Content>
     <Content Include="Models\VisitorModel.edmx.diagram">
       <DependentUpon>VisitorModel.edmx</DependentUpon>
     </Content>
+    <Content Include="ClassDiagram2.cd" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -289,7 +290,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Class1.cs" />
     <Compile Include="Models\Guest.cs">
       <DependentUpon>VisitorModel.tt</DependentUpon>
     </Compile>

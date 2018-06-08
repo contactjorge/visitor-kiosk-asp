@@ -5,12 +5,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="2b16288e386e46329454bfd29058b909" Name="Diagram1" >
-        <EntityTypeShape EntityType="VisitorModel.Guest" Width="1.5" PointX="0.5" PointY="2.125" />
-        <EntityTypeShape EntityType="VisitorModel.Registration" Width="1.625" PointX="3.5" PointY="2.125" />
-        <EntityTypeShape EntityType="VisitorModel.Visitor" Width="1.625" PointX="6.5" PointY="2.125" />
+        <EntityTypeShape EntityType="VisitorModel.Guest" Width="1.5" PointX="0.75" PointY="2.25" />
+        <EntityTypeShape EntityType="VisitorModel.Registration" Width="1.625" PointX="3.25" PointY="2.25" />
+        <EntityTypeShape EntityType="VisitorModel.Visitor" Width="1.625" PointX="5.875" PointY="2.25" />
+        <AssociationConnector Association="VisitorModel.VisitorGuest" />
         <AssociationConnector Association="VisitorModel.VisitorRegistration" />
-        <AssociationConnector Association="VisitorModel.GuestRegistration" ManuallyRouted="false" >
-        </AssociationConnector>
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
