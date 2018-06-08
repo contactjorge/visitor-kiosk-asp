@@ -11,9 +11,7 @@ namespace visitor_kiosk_asp
 	public partial class PreRegister : System.Web.UI.Page
 	{
 		private string _guestFName, _guestLName, _guestRoomNum, _visitorFName, _visitorLName, _visitorDOB, _visitDate, _visitReason;
-		private Guest _guest = new Guest();
-		private Visitor _visitor;
-		private Registration _registration;
+
 
 		protected void Page_Load(object sender, EventArgs e)
 		{
@@ -22,6 +20,9 @@ namespace visitor_kiosk_asp
 
 		protected void btnPreRegister_Click(object sender, EventArgs e)
 		{
+			Guest _guest = new Guest();
+			Visitor _visitor = new Visitor();
+			Registration _registration = new Registration();
 			_guestFName = txtGuestFName.Text;
 			_guestLName = txtGuestLName.Text;
 			_guestRoomNum = txtRoomNum.Text;
