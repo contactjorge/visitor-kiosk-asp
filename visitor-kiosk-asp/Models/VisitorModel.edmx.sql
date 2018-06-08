@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 06/07/2018 11:36:16
+-- Date Created: 06/07/2018 18:44:29
 -- Generated from EDMX file: C:\Users\contactjorge\source\repos\visitor-kiosk-asp\visitor-kiosk-asp\Models\VisitorModel.edmx
 -- --------------------------------------------------
 
